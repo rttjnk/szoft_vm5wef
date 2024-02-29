@@ -5,7 +5,9 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{DC0B15B5-CC27-42E4-995D-B5FDB00BF260}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pascal", "Pascal\Pascal.csproj", "{A6F26516-BFB8-4A57-98F0-073E4EBC2F73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pascal", "Pascal\Pascal.csproj", "{A6F26516-BFB8-4A57-98F0-073E4EBC2F73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VillogoGomb", "VillogoGomb\VillogoGomb.csproj", "{A59936AB-4684-4445-9843-B8F403123F72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A6F26516-BFB8-4A57-98F0-073E4EBC2F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6F26516-BFB8-4A57-98F0-073E4EBC2F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6F26516-BFB8-4A57-98F0-073E4EBC2F73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A59936AB-4684-4445-9843-B8F403123F72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A59936AB-4684-4445-9843-B8F403123F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A59936AB-4684-4445-9843-B8F403123F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A59936AB-4684-4445-9843-B8F403123F72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
