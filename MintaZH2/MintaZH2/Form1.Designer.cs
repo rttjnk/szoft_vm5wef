@@ -37,6 +37,7 @@
             adatBindingSource = new BindingSource(components);
             button2 = new Button();
             button3 = new Button();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)adatBindingSource).BeginInit();
             SuspendLayout();
@@ -94,6 +95,7 @@
             button2.TabIndex = 2;
             button2.Text = "Szerkesztés";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -103,12 +105,24 @@
             button3.TabIndex = 3;
             button3.Text = "Törlés";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(502, 405);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 4;
+            button4.Text = "Mentés";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(dataGridView1);
@@ -131,5 +145,6 @@
         private DataGridViewTextBoxColumn populationDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn areaInSquareKmDataGridViewTextBoxColumn;
         private BindingSource adatBindingSource;
+        private Button button4;
     }
 }

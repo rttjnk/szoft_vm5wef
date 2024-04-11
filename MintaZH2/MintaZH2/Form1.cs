@@ -12,6 +12,7 @@ namespace MintaZH2
         public Form1()
         {
             InitializeComponent();
+            adatBindingSource.DataSource = countryList;
             dataGridView1.DataSource = adatBindingSource;
         }
 
@@ -34,6 +35,29 @@ namespace MintaZH2
         private void adatBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            adatBindingSource.RemoveCurrent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            EditForm ef = new EditForm();
+
+            ef.Adat = adatBindingSource.Current as Adat;
+            ef.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            using (var writer = new StreamWriter("countries.csv"))
+            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+            {
+                /*fájlba  írás*/
+                csv.WriteRecords(countryList);
+            }
         }
     }
 }
